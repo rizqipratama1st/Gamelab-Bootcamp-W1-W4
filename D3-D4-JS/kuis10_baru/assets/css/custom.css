@@ -1,0 +1,73 @@
+nav.navbar {
+    max-width: 1200px;
+    /* applying max-width */
+    margin: 0 auto;
+    /* center */
+}
+
+.navbar-collapse {
+    justify-content: center;
+    /* center the elements in the block if there is flex */
+    -webkit-justify-content: center;
+    /* make it works on some navigators */
+}
+
+.custom-navbar-background-color {
+    background-color: white;
+}
+
+/* .custom-carousel-header-fiting {
+    max-height: 500px;
+} */
+
+.carousel-item img {
+    max-width: 100%;
+    /* Gambar harus dibuat dengan rasio 4:1 */
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../img/headerCarousel/caro3.jpg");
+
+  /* Set a specific height */
+  /* min-height: 500px;  */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../img/headerCarousel/caro5.jpg");
+
+  /* Set a specific height */
+  /* min-height: 500px;  */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.custom-position-center {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.custom-position-center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.background-biru1st {
+    background-color: #0d0064 !important;
+}

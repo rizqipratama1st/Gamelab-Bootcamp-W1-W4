@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scr.js"></script>
+    <style>
+        .img-container {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            margin-top: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="buttonAjax">Update Image</button>
+    <div class="img-container">
+        <img src="" alt="Gambar">
+    </div>
+    <script src="" async defer></script>
+    <script>
+        $.ajax({
+            url: 'https://dog.ceo/api/breeds/image/random',
+            method: 'GET',
+            success: function (res) {
+                console.log(res);
+            }
+        });
+    </script>
+</body>
+
+</html>

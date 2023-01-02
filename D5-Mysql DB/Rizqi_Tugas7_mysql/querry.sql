@@ -1,0 +1,1 @@
+update agents set AGENT_NAME = replace(AGENT_NAME, ' %','');

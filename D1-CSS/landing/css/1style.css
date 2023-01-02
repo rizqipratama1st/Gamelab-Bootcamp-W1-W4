@@ -1,0 +1,29 @@
+.warna-biru1st {
+    color: #0d0064;
+}
+
+.background-biru1st {
+    background-color: #0d0064 !important;
+}
+
+.fill-putih{
+    fill: #ffffff;
+}
+
+nav.navbar {
+    max-width: 1200px;
+    /* applying max-width */
+    margin: 0 auto;
+    /* center */
+}
+
+.navbar-collapse {
+    justify-content: center;
+    /* center the elements in the block if there is flex */
+    -webkit-justify-content: center;
+    /* make it works on some navigators */
+}
+
+.custom-navbar-background-color {
+    background-color: white;
+}

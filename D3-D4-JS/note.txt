@@ -1,0 +1,40 @@
+$(selector).fadeIn(speed,easing,callback)
+$(selector).fadeOut(speed,easing,callback)
+$(selector).fadeTo(speed,opacity,easing,callback)
+$(selector).fadeToggle(speed,easing,callback)
+
+$(selector).show(speed,easing,callback)
+$(selector).hide(speed,easing,callback)
+$(selector).toggle(speed,easing,callback)
+
+$(selector).slideUp(speed,easing,callback)
+$(selector).slideDown(speed,easing,callback)
+$(selector).slideToggle(speed,easing,callback)
+
+
+
+speed - slow fast
+easing - swing linear
+callback  - opsional
+opacity - wajib diisi
+
+---------------------
+
+
+$('element').addClass('nama-class');
+$('element').removeClass('nama-class');
+$('element').addClass('nama-class').('element').removeClass('nama-class');
+
+$('element').hasClass('nama-class');
+$('element').attr('nama-attribute');
+$('element').removeAttr('nama-attribute');
+
+$('element').text();
+$('element').text('Hallo');
+$('element').html('<h1>hello</h1>');
+$('element').html();
+$('element').append('element yang ditambahkan');
+$('element').prepend('element yang ditambahkan');
+$('element').remove();
+
+$('input').removeclass

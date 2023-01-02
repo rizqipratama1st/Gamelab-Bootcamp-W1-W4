@@ -1,0 +1,55 @@
+
+create database tugasakhirmysql;
+
+use tugasakhirmysql;
+
+show tables;
+
+-- Jawaban No.1
+select * from customer;
+select AGENT_CODE, AGENT_NAME, WORKING_AREA from agents;
+
+
+-- jawaban No.2
+select * from customer where CUST_COUNTRY = 'USA';
+
+-- Jawaban N0.3
+
+select * from customer where CUST_NAME like 'Ra%' limit 2,2;
+
+-- Jawaban No.4
+
+select * from customer where CUST_COUNTRY = 'USA' OR CUST_COUNTRY ='Canada' ;
+
+-- Jawaban No. 5
+
+select * from customer where PAYMENT_AMT between (select avg(OUTSTANDING_AMT) from customer) and (select max(OUTSTANDING_AMT) from customer) ;
+
+
+-- Jawaban No. 6
+
+select * from customer inner join agents using(AGENT_CODE);
+
+-- Jawaban No. 7
+
+select * from customer left join agents using(AGENT_CODE);
+
+-- Jawaban No. 8
+
+select * from customer Right join agents using(AGENT_CODE);
+
+-- Jawaban No. 9
+
+select CUST_COUNTRY as 'Negara Customer',count(CUST_COUNTRY) as Jumlah  from customer group by CUST_COUNTRY ;
+
+-- Jawaban No. 10
+
+select * from 
+(
+	select c.CUST_NAME as Customer,a.AGENT_NAME as Agent,a.WORKING_AREA as Kota,c.CUST_COUNTRY as Negara,c.OUTSTANDING_AMT as Unpaid from customer c join agents a on a.AGENT_CODE = c.AGENT_CODE
+) a where a.Unpaid > 
+(
+	select avg(OUTSTANDING_AMT) from customer
+);
+
+
